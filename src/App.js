@@ -2,6 +2,7 @@ import React from 'react';
 import Search from './components/search.js';
 import Weather from './components/weather.js';
 import './App.css';
+import 'react-bulma-components/dist/react-bulma-components.min.css';
 const API_KEY = "ab72597bec0e5cde1813ccfe26f5fec7";
 
 class App extends React.Component {
@@ -43,8 +44,8 @@ class App extends React.Component {
   }
   render(){
   return (
-    <div className="App">
-<h1>Weather App</h1>
+    <div className="App container">
+<h1 className="is-family-primary is-family-monospace is-size-1 header has-text-weight-bold islarge">Weather App</h1>
    <Search getWeather={this.getWeather} />
    <Weather  
    temperature={this.state.temperature}

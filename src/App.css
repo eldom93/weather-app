@@ -1,7 +1,25 @@
 .App {
   text-align: center;
-}
 
+}
+.column {
+  margin:1rem;
+}
+@media print, screen and (min-width: 769px){
+.column.is-3{
+    flex: none;
+    width: 40%!important;
+}
+}
+.button.is-primary {
+  background-color: #00d1b2;
+  border-color: transparent;
+  color: #fff;
+  margin: 1rem;
+}
+.header{
+  margin:1rem;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
